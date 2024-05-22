@@ -11198,8 +11198,8 @@ p {
   width: 100%;
 }
 
-.portfolio-card .portfolio-card-overlay {
-  position: absolute;
+.portfolio-card .#d87500 {
+  /* position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -11215,33 +11215,21 @@ p {
   width: 0;
   height: 0;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .portfolio-card .portfolio-card-overlay {
-    -webkit-transition: none;
-    transition: none;
+  .portfolio-card .#d87500 {
+
   }
 }
 
-.portfolio-card .portfolio-card-overlay .portfolio-card-caption {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  width: 100%;
+.portfolio-card .#d87500 .portfolio-card-caption {
+
 }
 
-.portfolio-card:hover .portfolio-card-overlay {
-  opacity: 1;
-  visibility: visible;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
+.portfolio-card:hover .#d87500 {
+
 }
 
 @media (max-width: 767.98px) {
@@ -12234,3 +12222,39 @@ pre .code {
   padding: 100px 0 !important;
 }
 
+#container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.a-title {
+  position: absolute;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: conic-gradient(#ed0101, blue);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.a-second-title {
+  position: absolute;
+  margin-top: 25vh;
+  pointer-events: none;
+  -webkit-text-stroke: 1.3px white;
+  letter-spacing: 1.125px;
+  font-size: -webkit-xxx-large;
+  font-weight: 900;
+  mix-blend-mode: color-dodge;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
